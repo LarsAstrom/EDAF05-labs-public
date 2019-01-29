@@ -1,3 +1,8 @@
 template
 testdata_tools
 **/submissions
+problem.yaml
+**/data/*.sh
+**/data/*.py
+**/input_format_validators
+**/problem_statement
