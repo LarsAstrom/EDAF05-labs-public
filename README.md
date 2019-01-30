@@ -13,3 +13,7 @@ Laborations for EDAF05, held at LTH.
         - bash check_solution.sh java solution
         - bash check_solution.sh ./a.out
     - where solution.py / solution is the solution file. ./a.out is the compiled file of a C or C++ solution.
+5. If the solution was correct, this will be written in the terminal. Otherwise you will see which instance your solution failed on.
+6. When your solution is correct, show this to your lab instructor who will pass you on the lab.
+7. After showing the output of the bash-script you and your lab instructor will look at your code and discuss it thoroughly, as well as your report and the answer to the questions in the lab instructions.
+8. Note that it is considered cheating to manipulate the bash-scripts in order to trick the instructor into passing you.
