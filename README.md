@@ -1,5 +1,5 @@
 # EDAF05-labs
-Laborations for EDAF05, held at LTH. 
+Laborations for EDAF05, held at LTH during study period 4 2018-19. Lecturer and course convenor is Jonas Skeppstedt. This version of the lab assignments are written and maintained by Lars Åström. If you find any errors, ambiguitys or anything else that should be corrected - please contact me via e-mail: astrom.lars@telia.com   
 
 ## How to do labs:
 1. Clone repository.
