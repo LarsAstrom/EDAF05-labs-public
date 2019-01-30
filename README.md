@@ -2,7 +2,7 @@
 Laborations for EDAF05, held at LTH during study period 4 2018-19. Lecturer and course convenor is Jonas Skeppstedt. This version of the lab assignments are written and maintained by Lars Åström. If you find any errors, ambiguitys or anything else that should be corrected - please contact me via e-mail: astrom.lars@telia.com   
 
 ## How to do labs:
-1. Clone repository.
+1. Clone repository. (Only needed in the beginning of the course, for the later labs, start at 2.)
 2. Write solution in preferred languange. The supported languages in the course are Python and Java. Some lab instructors may help with C and C++, but it is not guaranteed. Put the solution in the folder of the lab.
 3. Navigate (in terminal) to the directory of the current lab. 
 4. 
