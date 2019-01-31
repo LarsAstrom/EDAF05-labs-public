@@ -4,29 +4,14 @@
 # or
 # ./check_solution.sh java solution
 # ./check_solution.sh ./a.out
-folder_sample=data/sample
-for f in $folder_sample/*.in; do
+
+for f in data/**/*.in; do
     echo $f
     pre=${f%.in}
     out=$pre.out
     verdict=$pre.verd
     $* < $f > $out
-    python3 output_validator/output_validator.py $f < $out > $verdict
-    if grep -Fxq "success" $verdict
-    then 
-        echo Correct!
-    else
-        echo $f Incorrect!
-        exit 1
-    fi
-done
-folder_secret=data/secret
-for f in $folder_secret/*.in; do
-    echo $f
-    pre=${f%.in}
-    out=$pre.out
-    verdict=$pre.verd
-    $* < $f > $out
+    echo 'Checking...'
     python3 output_validator/output_validator.py $f < $out > $verdict
     if grep -Fxq "success" $verdict
     then 
