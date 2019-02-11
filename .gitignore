@@ -6,3 +6,5 @@ problem.yaml
 **/data/*.py
 **/input_format_validators
 **/problem_statement
+*.out
+*.verd
