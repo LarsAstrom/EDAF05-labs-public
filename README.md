@@ -1,5 +1,5 @@
 # EDAF05-labs
-Labs for EDAF05, held at LTH during study period 4 2018-19. Lecturer and course convenor is Jonas Skeppstedt. This version of the lab assignments are written and maintained by Lars Åström. If you find any errors, ambiguities or anything else that should be corrected - please contact me via e-mail: astrom.lars@telia.com, or submit an issue on [github](https://github.com/LarsAstrom/EDAF05-labs-public/issues).   
+Labs for EDAF05, held at LTH during study period 4 2018-19. Lecturer and course convenor is Jonas Skeppstedt. This version of the lab assignments are written and maintained by Lars Åström. Previous versions have been written by Thore Husfeldt and Måns Magnusson, lots of credit is given to them regarding the labs! If you find any errors, ambiguities or anything else that should be corrected - please contact me via e-mail: astrom.lars@telia.com, or submit an issue on [github](https://github.com/LarsAstrom/EDAF05-labs-public/issues).   
 
 ## Dependencies:
 - `python3`
