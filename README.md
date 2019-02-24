@@ -4,7 +4,7 @@ Labs for EDAF05, held at LTH during study period 4 2018-19. Lecturer and course 
 ## Dependencies:
 - `python3`
 - `bash`
-- `*nix` file system
+- `*nix` file system, i.e. Linux file system. Possible to use for example Windows, but then it might be trickier to get bash-script to work. But all tests can probably be run on Windows, then use for example computer in lab session room to run the script.
 
 ## How to do labs:
 1. Clone repository. (Only needed in the beginning of the course, for the later labs, start at 2.)
