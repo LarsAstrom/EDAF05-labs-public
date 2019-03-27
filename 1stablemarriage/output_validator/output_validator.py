@@ -19,10 +19,15 @@ for person in range(2*N):
     else: women[person_id] = person_inv_pref_list
 
 pairs = []
+allMen = []
 for woman in range(1,N+1):
     man = int(input())
+    allMen.append(man)
     assert 1<=man<=N, 'Man index out of range'
     pairs.append((woman,man))
+if len(set(allMen)) < N:
+    print('Fail')
+    exit()
 for w1,m1 in pairs:
     for w2,m2 in pairs:
         if w1 == w2: continue
