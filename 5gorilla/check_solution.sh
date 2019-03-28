@@ -17,7 +17,12 @@ for f in data/**/*.in; do
     then 
         echo Correct!
     else
-        echo $f Incorrect!
-        exit 1
+        if grep -Fxq "uhoh" $verdict
+        then
+            echo You got better result than the answer key. Please contact a lab instructor.
+        else
+            echo $f Incorrect!
+            exit 1
+        fi
     fi
 done
