@@ -32,27 +32,19 @@ for q in range(Q):
     s1,s2 = lines[len(chs)+2+q].split()
     so1,so2 = lines_out[q].split()
     if len(so1) != len(so2):
-        print('fail, strings of unequal length.')
-        print('Size of string 1: {}'.format(len(so1)))
-        print('Size of string 2: {}'.format(len(so2)))
+        print('fail, strings of unequal length')
         exit()
     sa1,sa2 = lines_ans[q].split()
     if not (valid_string(s1,so1) and valid_string(s2,so2)):
         print('fail, invalid string')
-        if not valid_string(s1,so1):
-            print(s1)
-            print(so1)
-        else:
-            print(s2)
-            print(so2)
         exit()
-    output_score = get_score(so1,so2)
-    answer_score = get_score(sa1,sa2)
-    if output_score > answer_score:
-        print('fail, wrong gain, got {}, expected {}'.
-                format(get_score(so1,so2),get_score(sa1,sa2)))
+    out_score, ans_score = get_score(so1,so2), get_score(sa1,sa2)
+    if out_score < ans_score:
+        print('fail, too small gain. Got {}, expected {}.'.
+                format(out_score,ans_score))
         exit()
-    elif output_score < answer_score:
-        print('uhoh')
+    if out_score > ans_score:
+        print('uhoh, too large gain, got {}, expected {}'.
+                format(out_score,ans_score))
         exit()
 print('success')
