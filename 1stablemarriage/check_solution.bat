@@ -8,7 +8,7 @@ for /r %%f in (data\sample\*.in data\secret\*.in) do (
     find "success" "%%~pnf.verd" > nul
     if errorlevel 1 (
         echo %%~nxf Incorrect!
-        exit 1
+        exit /B 1
     ) else (
         echo Correct!
     )

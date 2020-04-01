@@ -5,7 +5,7 @@ for /r %%f in (data\sample\*.in data\secret\*.in) do (
     fc /b "%%~pnf.ans" "%%~pnf.out" > nul
     if errorlevel 1 (
         echo %%~nxf Incorrect!
-        exit 1
+        exit /B 1
     ) else (
         echo Correct!
     )
