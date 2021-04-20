@@ -11,7 +11,7 @@ for f in data/**/*.in; do
     out=$pre.out
     ans=$pre.ans
     $* < $f > $out
-    DIFF=$(diff $ans $out)
+    DIFF=$(diff -w $ans $out)
     if [ "$DIFF" == "" ]
     then 
         echo Correct!
