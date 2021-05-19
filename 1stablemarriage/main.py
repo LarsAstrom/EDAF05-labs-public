@@ -8,8 +8,8 @@ def gale_shapely(W, M):
     pairs = dict((el, None) for el in list(range(1, len(M)+1)))
 
     while len(p) > 0:
-        m = p.pop(0)
-        w = M[m].pop(0)
+        m = p.pop()
+        w = M[m].pop(0) # this is dumb
         
         if pairs[w] == None:
             pairs[w] = m
@@ -27,8 +27,8 @@ def load_data():
     wom = dict()
     
     data = ""
-    for line in fileinput.input():
-        data += " " + line.strip()
+    for line in fileinput.input():      
+        data += " " + line.strip() # this might be dumb
     
     data = data.split(" ")
     n = int(data[1])
@@ -44,8 +44,8 @@ def load_data():
         p_count[p_i-1] = p_count[p_i-1] + 1
         if p_count[p_i-1] == 1:
             inv_prefs = [0]*n
-            for j, pref in enumerate(prefs):
-                inv_prefs[int(pref) - 1] = j + 1    
+            for j, man in enumerate(prefs):
+                inv_prefs[int(man) - 1] = j + 1    
             wom[p_i] = inv_prefs
 
         elif p_count[p_i-1] == 2:

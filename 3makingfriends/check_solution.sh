@@ -5,13 +5,13 @@
 # ./check_solution.sh java solution
 # ./check_solution.sh ./a.out
 
-for f in data/**/*.in; do
+for f in data/sample/*.in data/more/*.in data/secret/*.in; do
     echo $f
     pre=${f%.in}
     out=$pre.out
     ans=$pre.ans
     $* < $f > $out
-    DIFF=$(diff $ans $out)
+    DIFF=$(diff -w $ans $out)
     if [ "$DIFF" == "" ]
     then 
         echo Correct!
