@@ -17,7 +17,8 @@ def load_data():
     
     return chars, costs, queries
 
-
+def make_table(G, s, t):
+    pass
 
 if __name__ == "__main__":
     chars, costs, queries = load_data()
